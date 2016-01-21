@@ -31,6 +31,8 @@ function stop(){
   //wheel animation added
   wheelBarOne.classList.remove('mymove');
   wheelBarTwo.classList.remove('mymove');
+  wheelBarOne.classList.remove('mymoveback');
+  wheelBarTwo.classList.remove('mymoveback');
 
   //car animation added
   $carMove.css('left', $carMove.css("left"));
