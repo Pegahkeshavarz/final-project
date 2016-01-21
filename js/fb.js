@@ -8,15 +8,12 @@ if (localStorage.getItem("src") != null && localStorage.getItem("username")!= nu
   fbRemove.remove();
   getUserInfo();
   getUserPhoto();
-  
+
 }
 
   document.querySelector(".fb-logo").addEventListener("click", function(event) {
 
     event.preventDefault();
-
-
-
 
     FB.login(function(response) {
       if (response.authResponse) {
@@ -46,7 +43,7 @@ if (localStorage.getItem("src") != null && localStorage.getItem("username")!= nu
 
 
   function getUserInfo(){
-
+   fbRemove.remove();
     var li= document.createElement('li');
     navbar.appendChild(li);
     li.textContent = "Hi, "+ localStorage.getItem('username');
@@ -56,7 +53,7 @@ if (localStorage.getItem("src") != null && localStorage.getItem("username")!= nu
 
   function getUserPhoto(){
 
-
+    fbRemove.remove();
     var li= document.createElement('li');
     navbar.appendChild(li);
     var img=document.createElement('img');
