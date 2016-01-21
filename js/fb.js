@@ -11,6 +11,7 @@ var navbar = document.querySelector(".nav.navbar-nav.navbar-right");
     event.preventDefault();
 
     if (localStorage.getItem("src") != null && localStorage.getItem("username")!= null) {
+      fbRemove.remove();
       getUserInfo();
       getUserPhoto();
       return;
@@ -43,7 +44,8 @@ var navbar = document.querySelector(".nav.navbar-nav.navbar-right");
 
   });
 
-  function  getUserInfo(){
+  function  getUserInfo(e){
+    e.preventDefault();
     var li= document.createElement('li');
     navbar.appendChild(li);
     li.textContent = "Hi, "+ localStorage.getItem('username');
@@ -51,9 +53,9 @@ var navbar = document.querySelector(".nav.navbar-nav.navbar-right");
   }
 
 
-  function getUserPhoto(){
+  function getUserPhoto(e){
+   e.preventDefault();
 
-   fbRemove.remove();
     var li= document.createElement('li');
     navbar.appendChild(li);
     var img=document.createElement('img');
