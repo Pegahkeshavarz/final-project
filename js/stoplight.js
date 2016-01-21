@@ -38,6 +38,7 @@ function stop(){
 
   //car animation added
   $carMove.css('left', $carMove.css("left"));
+  $carMove.css.remove('transition-duration', '14s');
 
   //people animation added
   if ($carMove.css('left') > '520px') {
