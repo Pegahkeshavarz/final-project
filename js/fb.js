@@ -39,19 +39,18 @@ var navbar = document.querySelector(".nav.navbar-nav.navbar-right");
       FB.api('/me/picture?type=normal', function(response) {
         src = response.data.url;
         localStorage.setItem('src', src);
-      }
-    }
-
-    fbRemove.remove();
+      });
+    } else{
+   fbRemove.remove();
     var li= document.createElement('li');
     navbar.appendChild(li);
     var img=document.createElement('img');
     li.appendChild(img);
     img.setAttribute('src', src);
     img.classList.add('fb-img');
-
-    });
   }
+}
+
 
 
   //https://developers.facebook.com/docs/facebook-login/permissions --for index
