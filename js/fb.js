@@ -9,7 +9,7 @@ if (localStorage.getItem("src") != null && localStorage.getItem("username")!= nu
   getUserInfo();
   getUserPhoto();
   return;
-} else{
+}
 
   document.querySelector(".fb-logo").addEventListener("click", function(event) {
 
@@ -43,7 +43,7 @@ if (localStorage.getItem("src") != null && localStorage.getItem("username")!= nu
 
 
   });
-}
+
 
   function getUserInfo(){
 
