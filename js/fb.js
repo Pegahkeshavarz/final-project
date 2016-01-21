@@ -10,7 +10,7 @@ var navbar = document.querySelector(".nav.navbar-nav.navbar-right");
 
     event.preventDefault();
 
-    if (localStorage.getItem("src") != null) {
+    if (localStorage.getItem("src") != null && localStorage("username")!= null) {
       getUserInfo()
       return;
     }
@@ -21,18 +21,16 @@ var navbar = document.querySelector(".nav.navbar-nav.navbar-right");
        console.log('Welcome!  Fetching your information.... ');
        FB.api('/me', function(response) {
          console.log('Good to see you, ' + response.name + '.');
-         var li= document.createElement('li');
-         navbar.appendChild(li);
-         li.textContent = "Hi, "+ response.name;
-         li.classList.add('fb-text');
+         username= response.name;
+         localStorage.setItem('username', username);
+         getUserInfo();
+
 
          FB.api('/me/picture?type=normal', function(response) {
            src = response.data.url;
            localStorage.setItem('src', src);
-           getUserInfo();
+           getUserPhoto();
          });
-
-
 
        });
       } else {
@@ -44,8 +42,15 @@ var navbar = document.querySelector(".nav.navbar-nav.navbar-right");
 
   });
 
+  function  getUserInfo(){
+    var li= document.createElement('li');
+    navbar.appendChild(li);
+    li.textContent = "Hi, "+ localStorage.getItem('username');
+    li.classList.add('fb-text');
+  }
 
-  function getUserInfo(){
+
+  function getUserPhoto(){
 
    fbRemove.remove();
     var li= document.createElement('li');
