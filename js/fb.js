@@ -44,8 +44,8 @@ var navbar = document.querySelector(".nav.navbar-nav.navbar-right");
 
   });
 
-  function getUserInfo(event){
-    event.preventDefault();
+  function getUserInfo(){
+    
     var li= document.createElement('li');
     navbar.appendChild(li);
     li.textContent = "Hi, "+ localStorage.getItem('username');
@@ -53,8 +53,8 @@ var navbar = document.querySelector(".nav.navbar-nav.navbar-right");
   }
 
 
-  function getUserPhoto(event){
-   event.preventDefault();
+  function getUserPhoto(){
+
 
     var li= document.createElement('li');
     navbar.appendChild(li);
