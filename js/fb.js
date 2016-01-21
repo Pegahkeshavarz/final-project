@@ -10,7 +10,7 @@ var navbar = document.querySelector(".nav.navbar-nav.navbar-right");
 
     event.preventDefault();
 
-    if (localStorage.getItem("src") != null && localStorage("username")!= null) {
+    if (localStorage.getItem("src") != null && localStorage.getItem("username")!= null) {
       getUserInfo()
       return;
     }
