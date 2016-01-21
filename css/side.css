@@ -1,0 +1,38 @@
+.top_bg{
+  position:absolute;
+  height:115px;
+  width:100%;
+  background:#063;
+}
+
+.side_bg{
+  position:absolute;
+  width:100%;
+  height:10px;
+  background:#CCC;
+  left:0;
+  top: 434px;
+}
+
+.side_bg_black{
+  background:#000;
+  height:10px;
+  width:5%;
+  margin-left:5%;
+  float:left;
+}
+
+.side_bg.bot{
+  top:607px;
+  z-index:999;
+}
+
+
+ .seprator{
+   position:absolute;
+   width:1px;
+   height:110px;
+   background:#999;
+   top:0;
+   left:47.1%;
+ }

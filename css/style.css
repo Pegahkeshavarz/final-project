@@ -1,0 +1,90 @@
+body{
+  overflow:hidden; background:#063;
+}
+
+li{
+  list-style: none;
+}
+
+
+.navbar-custom li {
+    color: #fff;
+    margin-top: 10px;
+}
+.design-car li {
+    display: inline-block;
+}
+
+ul.design-car {
+    display: inline-block;
+        margin-top: 2px;
+}
+
+*{
+  margin:0;
+  padding:0;
+}
+
+
+.navbar-custom li{
+  color:#fff;
+}
+
+.nav.navbar-nav .fb a:hover,
+.nav.navbar-nav .fb a:focus{
+  background: transparent;
+}
+
+.navbar-custom img.fb-logo{
+  width:200px !important;
+      margin-top: -15px;
+}
+
+.navbar-custom img{
+  width:50px;
+}
+
+.nav.navbar-nav .btn-group {
+  margin-top:16px;
+}
+
+.btn-custom{
+  margin-right:10px;
+}
+
+.custom-dropdown{
+  margin-left:10px !important;
+}
+
+li.btn-group {
+    margin-top: 12px !important;
+}
+
+img.fb-img {
+    border-radius: 100px;
+    margin-right: -38px;
+    margin-top: 3px;
+}
+
+li.fb-text {
+    font-size: 14px;
+    margin: 10px;
+    margin-top:14px;
+}
+/*road*/
+ .road{
+   position:absolute;
+   width:100%;
+   background:#333;
+   height:170px;
+   top: 443px;
+   box-shadow:2px 2px 7px #000;
+ }
+
+ .divider{
+    background:#CCC;
+    height:5px;
+    position:absolute;
+    top: 82px;
+    width:100%;
+  }

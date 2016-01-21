@@ -1,0 +1,82 @@
+/*ped walk*/
+.ped-white{
+  width: 13%;
+    height: 12px;
+    background-color: #ccc;
+    right: -900px;
+    top: 374px;
+    border: 3px solid #ccc;
+    position: relative;
+    margin-bottom: 23px;
+}
+
+/*Stop Light*/
+.stop-light-body{
+  width: 63px;
+  background-color: rgb(238,187,8);
+  border: 2px solid rgb(191,161,46);
+  border-radius: 20px;
+  height: 163px;
+  margin: 0 auto;
+  position: relative;
+  left: 435px;
+  top: -76px;;
+}
+
+.red-light {
+  margin:10px auto;
+  border-radius: 100%;
+  border: 2px solid black;
+  width:40px;
+  height: 40px;
+  background-color:rgb(91,70,2);
+  box-shadow: inset 1px 8px 2px -4px;
+  transition-duration: 500ms;
+}
+
+.yellow-light {
+  margin:7px auto;
+  border-radius: 100%;
+  border: 2px solid black;
+  width:40px;
+  height:40px;
+  background-color:rgb(91,70,2);
+  box-shadow: inset 1px 8px 2px -4px;
+  transition-duration: 500ms;
+
+}
+
+.green-light{
+  margin:5px auto;
+  border-radius: 100%;
+  border: 2px solid black;
+  width:40px;
+  height: 40px;
+  background-color: rgb(91,70,2);
+  box-shadow: inset 1px 8px 2px -4px;
+  transition-duration: 500ms;
+}
+
+.red-light-checked{
+background-color: red;
+}
+
+.yellow-light-checked{
+background-color: rgb(254,232,36);
+}
+
+.green-light-checked{
+background-color: green;
+}
+
+.line{
+  width: 8px;
+  margin: 0 auto;
+  border: 2px solid black;
+  height: 75px;
+  background-color: rgb(91,70,2);
+  border-radius: 3px;
+  position: absolute;
+  top:340px;
+  right: 200px;
+}

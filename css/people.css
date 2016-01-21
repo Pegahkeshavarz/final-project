@@ -1,0 +1,29 @@
+.people{
+  width: 144px;
+  position: relative;
+  top: -135px;
+  left: 880px;
+}
+
+.walking{
+  position: relative;
+  top: 213px;
+  left: 1200px;
+  width: 85px;
+  animation: manmove 20s forwards;
+  -webkit-animation: manmove 20s forwards;*/
+}
+
+.pedmove{
+  animation: pedmove 30s infinite;
+}
+
+@keyframes manmove{
+  0% {transform: translateX(0);}
+  100%{transform: translateX(-1100px);}
+}
+
+@keyframes pedmove{
+  from {transform: translateY(0); }
+  to {transform: translateY(600px);}
+}

@@ -1,0 +1,133 @@
+
+.car{
+  width:360px;
+  height:140px;
+  top: 425px;
+  position:absolute;
+  left:0px;
+  transition: left 6s;
+
+}
+
+.carback{
+  left:-300px;
+}
+
+.carmove{
+  left: 100%;
+}
+
+.logo{
+  width: 48px;
+  position: relative;
+  top: 50px;
+  left: 17px;
+}
+
+
+ .wheel{
+   background:#000;
+   border-radius:36px;
+   width:65px; height:65px;
+   left: 56px;
+   position: absolute;
+   top: 65px;
+   border:5px solid #fff;
+  }
+
+ .wheel_cap{
+    background:#FFF;
+    border-radius:32px;
+    margin:15%;
+    height:70%;
+    width:70%;
+    position:relative;
+  }
+
+ .wheel_bar_one{
+   height:5px;
+   background:#000;
+   position:absolute;
+   top:20px;
+   width:100%;
+
+}
+
+.wheel_bar_two{
+  height:5px;
+  background:#000;
+  position:absolute;
+  top:20px;
+  width:100%;
+}
+
+.mymove{
+  animation:mymove 0.1s infinite alternate;
+ -webkit-animation:mymove 0.1s infinite alternate;
+
+}
+
+ .wheel.front{
+   left: 260px;
+ }
+
+ .car_top{
+   width:50%;
+   height:40px;
+   background:#F00;
+   border-radius: 29px 50px 0 0;
+   left: 58px;
+   position: absolute;
+   width: 60%;
+ }
+
+ .car_bottom{
+    width:10%;
+    height:70px;
+    background-color:#FF0;
+    border-radius: 62px 55px 0 0;
+    top:40px;
+    left: 0;
+    position: absolute;
+    width: 100%;
+  }
+
+ .window{
+    width:35%;
+    background:#000;
+    opacity:0.5;
+    height:28px;
+    position:absolute;
+    top:12px;
+    left:20px;
+    border-radius: 10px 12px 0 0;
+    border:2px solid #fff;
+  }
+
+ .window.front{
+   border-radius: 10px 30px 0 0;
+   left: 125px;
+   width: 35%;
+ }
+
+ @keyframes mymove
+ {
+  0%  {transform:rotate(0deg);}
+  15% {transform:rotate(30deg);}
+  35% {transform:rotate(60deg);}
+  50% {transform:rotate(90deg);}
+  65% {transform:rotate(120deg);}
+  80% {transform:rotate(150deg);}
+  100%{transform:rotate(180deg);}
+ }
+
+ @-webkit-keyframes mymove
+ {
+  0%  {-webkit-transform:rotate(0deg);}
+  15% {-webkit-transform:rotate(30deg);}
+  35% {-webkit-transform:rotate(60deg);}
+  50% {-webkit-transform:rotate(90deg);}
+  65% {-webkit-transform:rotate(120deg);}
+  80% {-webkit-transform:rotate(150deg);}
+  100%{-webkit-transform:rotate(180deg);}
+ }

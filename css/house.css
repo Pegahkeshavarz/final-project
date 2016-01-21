@@ -1,0 +1,55 @@
+.house{
+
+  position: absolute;
+  height: 116px;
+  width: 200px;
+  top: 106px;
+  left: 95px;
+}
+
+
+.house-body{
+  background: #CDAA7D	;
+  height: 121px;
+  width: 185px;
+}
+
+.door{
+background: #fff;
+height: 60px;
+width: 60px;
+position: relative;
+left: 61px;
+top: 26px;
+border: 3px solid #5C4033;
+
+}
+
+.window-vertical{
+position: relative;
+height: 56px;
+background: #5C4033;
+width: 2px;
+left: 25px;
+}
+
+.window-horizental{
+  position: relative;
+    height: 2px;
+    background: #5C4033;
+    width: 56px;
+    bottom: 30px;
+}
+
+.roof{
+  bottom: -60px;
+  right: 15%;
+  width: 0;
+  height: 0;
+  border: 70px solid #5C4033;
+  border-top-color: transparent;
+  border-left-color: transparent;
+  border-right-color: transparent;
+  border-right-width: 93px;
+  border-left-width: 93px;
+}
