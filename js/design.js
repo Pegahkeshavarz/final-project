@@ -50,7 +50,7 @@ var bodyColorUp = prompt("choose your favorite color for top?");
     var d=colours["color"][0][bodyColorUp];
     carUp.setAttribute('style','background-color:'+d);}
    }else{
-  alert('color undefiend, please choose another color');
+  alert('color undfined, please choose another color');
   }
 }
 
