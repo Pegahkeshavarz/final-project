@@ -6,7 +6,6 @@
   position:absolute;
   left:0px;
   transition: left 6s;
-
 }
 
 .carback{
@@ -50,7 +49,12 @@
    position:absolute;
    top:20px;
    width:100%;
+   transition: transform 0.2s infinite;
 
+}
+
+.wheel-back{
+  transform: rotate(0deg) rotate(30deg) rotate(60deg) rotate(90deg) rotate(120deg) rotate(160deg) rotate(180deg);
 }
 
 .wheel_bar_two{

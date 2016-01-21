@@ -38,7 +38,7 @@ var navbar = document.querySelector(".nav.navbar-nav.navbar-right");
 
 
       localStorage.setItem('src', response.data.url);
-      if(localStorage.getItem('src').length>0){
+      if(localStorage.getItem('src').length > 0 ){
       fbRemove.remove();
       var li= document.createElement('li');
       navbar.appendChild(li);
