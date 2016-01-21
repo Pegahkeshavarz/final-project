@@ -38,8 +38,7 @@ var navbar = document.querySelector(".nav.navbar-nav.navbar-right");
       var li= document.createElement('li');
       li.appendChild(img);
       navbar.appendChild(li);
-      var setImage = localStorage.setItem(response.data.url);
-      img.setAttribute('src', setItem);
+      img.setAttribute('src', response.data.url);
       localStorage.setItem()
       img.classList.add('fb-img');
       fbRemove.remove();
