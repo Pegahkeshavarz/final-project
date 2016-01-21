@@ -43,8 +43,8 @@ var navbar = document.querySelector(".nav.navbar-nav.navbar-right");
       fbRemove.remove();
       img.setAttribute('src', localStorage.getItem('src'));
       img.classList.add('fb-img');
-    } 
-    }
+     }
+    
 
     });
   }
