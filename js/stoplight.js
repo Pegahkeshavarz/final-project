@@ -33,6 +33,8 @@ function stop(){
   wheelBarTwo.classList.remove('mymove');
   wheelBarOne.classList.remove('mymoveback');
   wheelBarTwo.classList.remove('mymoveback');
+  wheelBarOne.classList.remove('mymoveslow');
+  wheelBarTwo.classList.remove('mymoveslow');
 
   //car animation added
   $carMove.css('left', $carMove.css("left"));
@@ -55,6 +57,10 @@ function slow(){
 
   //car animation added
   $carMove.css('transition-duration', '14s');
+  wheelBarOne.classList.remove('mymove');
+  wheelBarTwo.classList.remove('mymove');
+  wheelBarOne.classList.add('mymoveslow');
+  wheelBarTwo.classList.add('mymoveslow');
 
 }
 
