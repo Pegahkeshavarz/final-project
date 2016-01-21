@@ -31,15 +31,6 @@ var navbar = document.querySelector(".nav.navbar-nav.navbar-right");
 
   });
 
-  function createInfo(){
-    var li= document.createElement('li');
-    navbar.appendChild(li);
-    fbRemove.remove();
-    var img=document.createElement('img');
-    li.appendChild(img);
-    img.setAttribute('src', localStorage.getItem('src'));
-    img.classList.add('fb-img');
-  }
 
   function getUserInfo(){
 
@@ -47,8 +38,15 @@ var navbar = document.querySelector(".nav.navbar-nav.navbar-right");
 
 
       localStorage.setItem('src', response.data.url);
+      
       if(localStorage.getItem('src').length>0){
-      createInfo();
+      fbRemove.remove();
+      var li= document.createElement('li');
+      navbar.appendChild(li);
+      var img=document.createElement('img');
+      li.appendChild(img);
+      img.setAttribute('src', localStorage.getItem('src'));
+      img.classList.add('fb-img');
      }
 
 
