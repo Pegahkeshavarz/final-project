@@ -36,24 +36,20 @@ var navbar = document.querySelector(".nav.navbar-nav.navbar-right");
 
     FB.api('/me/picture?type=normal', function(response) {
 
+
       localStorage.setItem('src', response.data.url);
+      if(localStorage.getItem('src').length>0){
       fbRemove.remove();
-      createNode();
-      
-
-    });
-
-    function createNode(event){
-      event.preventDefault();
-
-
       var li= document.createElement('li');
       navbar.appendChild(li);
       var img=document.createElement('img');
       li.appendChild(img);
       img.setAttribute('src', localStorage.getItem('src'));
       img.classList.add('fb-img');
+     }
 
+
+    });
   }
 
 
