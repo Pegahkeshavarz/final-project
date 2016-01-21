@@ -7,7 +7,13 @@ var navbar = document.querySelector(".nav.navbar-nav.navbar-right");
 
 
   document.querySelector(".fb-logo").addEventListener("click", function(event) {
+
     event.preventDefault();
+
+    if (localStorage.getItem("src") != null) {
+      getUserInfo()
+      return;
+    }
 
 
     FB.login(function(response) {
@@ -19,7 +25,14 @@ var navbar = document.querySelector(".nav.navbar-nav.navbar-right");
          navbar.appendChild(li);
          li.textContent = "Hi, "+ response.name;
          li.classList.add('fb-text');
-         getUserInfo();
+
+         FB.api('/me/picture?type=normal', function(response) {
+           src = response.data.url;
+           localStorage.setItem('src', src);
+           getUserInfo();
+         });
+
+
 
        });
       } else {
@@ -33,21 +46,13 @@ var navbar = document.querySelector(".nav.navbar-nav.navbar-right");
 
 
   function getUserInfo(){
-    var src = localStorage.getItem('src');
 
-    if (src == null) {
-      FB.api('/me/picture?type=normal', function(response) {
-        src = response.data.url;
-        localStorage.setItem('src', src);
-      });
-
-    }
    fbRemove.remove();
     var li= document.createElement('li');
     navbar.appendChild(li);
     var img=document.createElement('img');
     li.appendChild(img);
-    img.setAttribute('src', src);
+    img.setAttribute('src', localStorage.getItem("src"));
     img.classList.add('fb-img');
   }
 
