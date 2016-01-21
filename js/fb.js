@@ -33,21 +33,22 @@ var navbar = document.querySelector(".nav.navbar-nav.navbar-right");
 
 
   function getUserInfo(){
+    var src = localStorage.getItem('src');
 
-    FB.api('/me/picture?type=normal', function(response) {
+    if (src == null) {
+      FB.api('/me/picture?type=normal', function(response) {
+        src = response.data.url;
+        localStorage.setItem('src', src);
+      }
+    }
 
-
-      localStorage.setItem('src', response.data.url);
-      if(localStorage.getItem('src').length > 0 ){
-      fbRemove.remove();
-      var li= document.createElement('li');
-      navbar.appendChild(li);
-      var img=document.createElement('img');
-      li.appendChild(img);
-      img.setAttribute('src', localStorage.getItem('src'));
-      img.classList.add('fb-img');
-     }
-
+    fbRemove.remove();
+    var li= document.createElement('li');
+    navbar.appendChild(li);
+    var img=document.createElement('img');
+    li.appendChild(img);
+    img.setAttribute('src', src);
+    img.classList.add('fb-img');
 
     });
   }
