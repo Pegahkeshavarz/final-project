@@ -40,7 +40,8 @@ var navbar = document.querySelector(".nav.navbar-nav.navbar-right");
         src = response.data.url;
         localStorage.setItem('src', src);
       });
-    } else{
+
+    } else {
    fbRemove.remove();
     var li= document.createElement('li');
     navbar.appendChild(li);
