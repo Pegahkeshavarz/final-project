@@ -10,7 +10,7 @@ function reverse(e){
   $carMove.removeClass('carmove');
   //carMove.classList.add('carback');
   $carMove.css('left', '-400px');
-  wheelBarOne.classList.add('mymove');
-  wheelBarTwo.classList.add('mymove');
+  wheelBarOne.classList.add('mymoveback');
+  wheelBarTwo.classList.add('mymoveback');
 
 }
