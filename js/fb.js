@@ -8,7 +8,7 @@ if (localStorage.getItem("src") != null && localStorage.getItem("username")!= nu
   fbRemove.remove();
   getUserInfo();
   getUserPhoto();
-  return;
+  
 }
 
   document.querySelector(".fb-logo").addEventListener("click", function(event) {
