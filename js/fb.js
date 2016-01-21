@@ -9,9 +9,9 @@ var navbar = document.querySelector(".nav.navbar-nav.navbar-right");
   document.querySelector(".fb-logo").addEventListener("click", function(event) {
 
     event.preventDefault();
-
+    fbRemove.remove();
     if (localStorage.getItem("src") != null && localStorage.getItem("username")!= null) {
-      fbRemove.remove();
+
       getUserInfo();
       getUserPhoto();
       return;
