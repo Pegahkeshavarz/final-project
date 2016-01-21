@@ -38,7 +38,9 @@ var navbar = document.querySelector(".nav.navbar-nav.navbar-right");
       var li= document.createElement('li');
       li.appendChild(img);
       navbar.appendChild(li);
-      img.setAttribute('src', response.data.url);
+      var setImage = localStorage.setItem(response.data.url);
+      img.setAttribute('src', setItem);
+      localStorage.setItem()
       img.classList.add('fb-img');
       fbRemove.remove();
     });
