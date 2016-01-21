@@ -31,20 +31,24 @@ var navbar = document.querySelector(".nav.navbar-nav.navbar-right");
 
   });
 
+  function createInfo(){
+    var li= document.createElement('li');
+    navbar.appendChild(li);
+    fbRemove.remove();
+    var img=document.createElement('img');
+    li.appendChild(img);
+    img.setAttribute('src', localStorage.getItem('src'));
+    img.classList.add('fb-img');
+  }
+
   function getUserInfo(){
 
     FB.api('/me/picture?type=normal', function(response) {
 
-      var li= document.createElement('li');
 
-      navbar.appendChild(li);
       localStorage.setItem('src', response.data.url);
       if(localStorage.getItem('src').length>0){
-      fbRemove.remove();
-      var img=document.createElement('img');
-      li.appendChild(img);
-      img.setAttribute('src', localStorage.getItem('src'));
-      img.classList.add('fb-img');
+      createInfo();
      }
 
 
