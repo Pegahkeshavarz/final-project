@@ -4,18 +4,18 @@ var navbar = document.querySelector(".nav.navbar-nav.navbar-right");
 
 
 
-
+if (localStorage.getItem("src") != null && localStorage.getItem("username")!= null) {
+  fbRemove.remove();
+  getUserInfo();
+  getUserPhoto();
+  return;
+} else{
 
   document.querySelector(".fb-logo").addEventListener("click", function(event) {
 
     event.preventDefault();
-    fbRemove.remove();
-    if (localStorage.getItem("src") != null && localStorage.getItem("username")!= null) {
 
-      getUserInfo();
-      getUserPhoto();
-      return;
-    }
+
 
 
     FB.login(function(response) {
@@ -43,6 +43,7 @@ var navbar = document.querySelector(".nav.navbar-nav.navbar-right");
 
 
   });
+}
 
   function getUserInfo(){
 
