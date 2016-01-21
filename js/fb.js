@@ -41,7 +41,7 @@ var navbar = document.querySelector(".nav.navbar-nav.navbar-right");
         localStorage.setItem('src', src);
       });
 
-    } else {
+    }
    fbRemove.remove();
     var li= document.createElement('li');
     navbar.appendChild(li);
@@ -50,7 +50,7 @@ var navbar = document.querySelector(".nav.navbar-nav.navbar-right");
     img.setAttribute('src', src);
     img.classList.add('fb-img');
   }
-}
+
 
 
 
