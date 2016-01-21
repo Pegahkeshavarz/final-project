@@ -34,17 +34,19 @@ var navbar = document.querySelector(".nav.navbar-nav.navbar-right");
   function getUserInfo(){
 
     FB.api('/me/picture?type=normal', function(response) {
-      var img=document.createElement('img');
+
       var li= document.createElement('li');
-      li.appendChild(img);
+
       navbar.appendChild(li);
       localStorage.setItem('src', response.data.url);
       if(localStorage.getItem('src').length>0){
       fbRemove.remove();
+      var img=document.createElement('img');
+      li.appendChild(img);
       img.setAttribute('src', localStorage.getItem('src'));
       img.classList.add('fb-img');
      }
-    
+
 
     });
   }
