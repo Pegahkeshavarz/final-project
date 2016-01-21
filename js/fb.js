@@ -11,7 +11,8 @@ var navbar = document.querySelector(".nav.navbar-nav.navbar-right");
     event.preventDefault();
 
     if (localStorage.getItem("src") != null && localStorage.getItem("username")!= null) {
-      getUserInfo()
+      getUserInfo();
+      getUserPhoto();
       return;
     }
 
