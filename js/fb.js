@@ -31,10 +31,13 @@ if (localStorage.getItem("src") != null && localStorage.getItem("username")!= nu
            localStorage.setItem('src', src);
            getUserPhoto();
          });
+         FB.api('/me?location', function(response) {
+           console.log(response);
+         });
 
 
 
-      
+
 
 
 
