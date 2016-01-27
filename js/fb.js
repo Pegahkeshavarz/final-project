@@ -19,7 +19,6 @@ if (localStorage.getItem("src") != null && localStorage.getItem("username")!= nu
       if (response.authResponse) {
        console.log('Welcome!  Fetching your information.... ');
        FB.api('/me', function(response) {
-         console.log(response.location.name);
          console.log('Good to see you, ' + response.name + '.');
          var username= response.name;
          localStorage.setItem('username', username);
@@ -31,15 +30,6 @@ if (localStorage.getItem("src") != null && localStorage.getItem("username")!= nu
            localStorage.setItem('src', src);
            getUserPhoto();
          });
-         FB.api('/me?location', function(response) {
-           console.log(response);
-         });
-
-
-
-
-
-
 
        });
       } else {
