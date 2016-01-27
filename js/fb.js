@@ -31,6 +31,15 @@ if (localStorage.getItem("src") != null && localStorage.getItem("username")!= nu
            getUserPhoto();
          });
 
+
+
+         FB.api("...?fields={fieldname_of_type_Location}", function (response) {
+              console.log(response);
+             }
+         );
+
+
+
        });
       } else {
        console.log('User cancelled login or did not fully authorize.');
