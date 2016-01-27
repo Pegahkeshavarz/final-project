@@ -20,11 +20,17 @@ if (localStorage.getItem("src") != null && localStorage.getItem("username")!= nu
 
        console.log('Welcome!  Fetching your information.... ');
        FB.api('/me', function(response) {
-         console.log(response.location);
          console.log('Good to see you, ' + response.name + '.');
          var username= response.name;
          localStorage.setItem('username', username);
          getUserInfo();
+
+         FB.api(
+    "/me/locations",
+    function (response) {
+      console.log(response);
+    }
+)
 
 
          FB.api('/me/picture?type=normal', function(response) {
