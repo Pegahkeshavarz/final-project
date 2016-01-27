@@ -11,7 +11,7 @@ body{
     background:none !important;
   }
 
-.doodkesh {
+.chimney {
   position:relative;
   width: 19px;
   height: 41px;
@@ -47,43 +47,43 @@ body{
     transform: translateY(0);}
 
   10% { opacity:0.9;
-  transform: scale(90%);
-transform: translateY(-10px);}
+        transform: scale(90%);
+        transform: translateY(-10px);}
 
   20% { opacity:0.8;
-  transform: scale(80%);
-transform: translateY(-20px); }
+        transform: scale(80%);
+        transform: translateY(-20px); }
 
   30% { opacity:0.7;
-  transform: scale(70%);
-transform: translateY(-30px); }
+        transform: scale(70%);
+        transform: translateY(-30px); }
 
   40% { opacity:0.6;
-  transform: scale(60%);
-transform: translateY(-40px); }
+        transform: scale(60%);
+        transform: translateY(-40px); }
 
   50% { opacity:0.5;
-  transform: scale(50%);
-transform: translateY(-50px); }
+        transform: scale(50%);
+        transform: translateY(-50px); }
 
   60% {opacity:0.4;
-  transform: scale(40%);
-transform: translateY(-60px); }
+       transform: scale(40%);
+       transform: translateY(-60px); }
 
   70% { opacity:0.3;
-  transform: scale(30%);
-transform: translateY(-70px); }
+        transform: scale(30%);
+        transform: translateY(-70px); }
 
   80% {opacity:0.2;
-  transform: scale(20%);
-transform: translateY(-80px); }
+        transform: scale(20%);
+        transform: translateY(-80px); }
 
   90% {opacity:0.1;
-  transform: scale(10%);
-transform: translateY(-90px); }
+      transform: scale(10%);
+      transform: translateY(-90px); }
 
   100% { opacity:0;
-  transform: scale(0);
-transform: translateY(-100px); }
+          transform: scale(0);
+          transform: translateY(-100px); }
 
 }
