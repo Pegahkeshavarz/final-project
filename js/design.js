@@ -41,6 +41,7 @@ var bodyColorUp = prompt("choose your favorite color for top?");
 
 
   for (var i = 0; i < colours["color"].length; i++) {
+
     if(colours["color"][0][bodyColorBottom]){
     console.log(colours["color"][0][bodyColorBottom]);
     var c =colours["color"][0][bodyColorBottom];
@@ -50,7 +51,7 @@ var bodyColorUp = prompt("choose your favorite color for top?");
     var d=colours["color"][0][bodyColorUp];
     carUp.setAttribute('style','background-color:'+d);}
    }else{
-  alert('color undfined, please choose another color');
+  alert('color undefined, please choose another color');
   }
 }
 
