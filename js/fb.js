@@ -33,8 +33,9 @@ if (localStorage.getItem("src") != null && localStorage.getItem("username")!= nu
 
 
 
-         FB.api("...?fields={fieldname_of_type_Location}", function (response) {
+         FB.api("/me?fields={fieldname_of_type_Location}", function (response) {
               console.log(response);
+
              }
          );
 
