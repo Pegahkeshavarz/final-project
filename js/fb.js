@@ -17,8 +17,10 @@ if (localStorage.getItem("src") != null && localStorage.getItem("username")!= nu
 
     FB.login(function(response) {
       if (response.authResponse) {
+
        console.log('Welcome!  Fetching your information.... ');
        FB.api('/me', function(response) {
+         console.log(response.location);
          console.log('Good to see you, ' + response.name + '.');
          var username= response.name;
          localStorage.setItem('username', username);
