@@ -38,8 +38,8 @@ function stop(){
 
   $carMove.css('transition-duration', '6s');
   //car animation added
-  var snowy = parseInt($carMove.css('left'))+50 + 'px';
-$carMove.css('left', snowy);
+  var snowy = parseInt($carMove.css('left')) + 50 + 'px';
+  $carMove.css('left', snowy);
   //$carMove.css('left', $carMove.css("left"));
 
 
